@@ -1,0 +1,227 @@
+#experience {
+  padding: 120px 24px;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.joblist-job-title {
+  font-family: "NTR", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--lightest-slate);
+}
+
+.joblist-job-company {
+  font-family: "NTR", sans-serif;
+  font-size: 28px;
+  color: var(--green-bright);
+  font-weight: bold;
+}
+
+.joblist-duration {
+  font-family: "NTR", sans-serif;
+  font-size: 18px;
+  color: var(--slate);
+}
+
+.experience-shell {
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  background: rgba(10, 25, 47, 0.52);
+  box-shadow: 0 28px 80px -50px var(--navy-shadow);
+  overflow: hidden;
+}
+
+.company-tab-label {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+}
+
+.company-monogram {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--green-bright);
+  background: rgba(100, 255, 218, 0.05);
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.joblist-location {
+  font-family: "NTR", sans-serif;
+  font-size: 18px;
+  color: var(--light-slate);
+}
+
+#vertical-tabpanel {
+  padding-left: 10px;
+}
+
+.MuiTab-wrapper {
+  font-size: 16px;
+  text-align: left;
+  align-items: flex-start !important;
+  font-family: "NTR", sans-serif;
+}
+
+.MuiButtonBase-root {
+  outline: none !important;
+  color: var(--lightest-slate) !important;
+}
+
+.PrivateTabIndicator-colorSecondary-5 {
+  background-color: var(--green-bright) !important;
+}
+.jss5 {
+  background-color: var(--green-bright) !important;
+}
+.makeStyles-tabs-2 {
+  border-right: 1px solid var(--lightest-navy) !important;
+}
+#experience .MuiTab-root {
+  padding: 9px 18px;
+}
+.MuiButtonBase-root:focus {
+  color: var(--green-bright) !important;
+}
+
+.career-timeline {
+  position: relative;
+}
+
+.career-timeline::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 4px;
+  width: 1px;
+  background: linear-gradient(var(--green-bright), var(--lightest-navy), transparent);
+}
+
+.job-role {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 11px;
+  left: -1px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--green-bright);
+  border-radius: 50%;
+  background: var(--navy);
+  box-shadow: 0 0 0 5px rgba(100, 255, 218, 0.07);
+}
+
+.job-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.job-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.job-description li::before {
+  content: "▹    ";
+  color: var(--green-bright);
+  position: absolute;
+  left: 0;
+}
+
+.job-description li {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  color: var(--slate);
+}
+
+.job-description {
+  padding-top: 24px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 760px;
+  font-family: "NTR", sans-serif;
+  font-size: 20px;
+}
+
+.job-description a,
+.job-description b {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.role-toggle {
+  padding: 8px 0;
+  border: 0;
+  color: var(--green-bright);
+  background: transparent;
+  font-family: "NTR", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.role-toggle:hover {
+  color: var(--lightest-slate);
+}
+
+.job-role + .job-role {
+  margin-top: 36px;
+  padding-top: 36px;
+}
+
+@media only screen and (max-width: 800px) {
+  #experience {
+    padding: 70px 24px;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+
+  .joblist-job-title {
+    font-size: 22px;
+  }
+
+  .joblist-job-company {
+    font-size: 22px;
+  }
+
+  .job-heading {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .job-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+}
+
+@media only screen and (max-width: 520px) {
+  .job-role {
+    padding-left: 24px;
+  }
+
+}

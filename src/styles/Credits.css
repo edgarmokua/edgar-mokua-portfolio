@@ -1,0 +1,141 @@
+#contact {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 24px 0;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(100, 255, 218, 0.12), transparent 30%),
+    linear-gradient(180deg, transparent, rgba(17, 34, 64, 0.85));
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: min(820px, 90vw);
+  height: min(820px, 90vw);
+  top: 10px;
+  left: 50%;
+  border: 1px solid rgba(100, 255, 218, 0.08);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.contact-content {
+  position: relative;
+  max-width: 850px;
+  text-align: center;
+}
+
+.contact-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 28px;
+  padding: 7px 13px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  color: var(--light-slate);
+  background: rgba(17, 34, 64, 0.5);
+  font-size: 13px;
+}
+
+.contact-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  box-shadow: 0 0 12px var(--green-glow);
+}
+
+.contact-kicker {
+  color: var(--green-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 16px;
+}
+
+.contact-content h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  color: var(--lightest-slate);
+  margin: 18px 0;
+}
+
+.contact-content p {
+  color: var(--slate);
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border: 1px solid var(--green-bright);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--green-bright);
+  font-weight: bold;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.contact-email:hover {
+  color: var(--navy);
+  background: #8fffe5;
+  transform: translateY(-3px);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.contact-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 18px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--light-slate);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.contact-social:hover {
+  border-color: var(--green-bright);
+  transform: translateY(-3px);
+}
+
+.ending-credits {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  padding: 100px 0 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    padding-top: 80px;
+  }
+
+  .contact-content p {
+    font-size: 18px;
+  }
+
+  .contact-email {
+    font-size: 14px;
+  }
+}

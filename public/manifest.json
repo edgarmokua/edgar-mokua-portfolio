@@ -1,0 +1,15 @@
+{
+  "short_name": "Edgar Mokua",
+  "name": "Edgar Mokua | Software Engineer",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0a192f",
+  "background_color": "#0a192f"
+}
